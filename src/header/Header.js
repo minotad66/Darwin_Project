@@ -1,39 +1,32 @@
 import React from "react";
-import "../App.css";
+import "./Header.css";
+import "../App.css"
 import logo from './logo.png';
 
 function Header() {
   return (
-    <header class="header">
-      <nav class="navbar navbar-expand-lg">
-        <div className="d-inline-flex p-2">
-          <a class="navbar-brand" href="#">
-            <img className='logo' src={logo} alt='logo'></img>
-          </a >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-        <div
-          class="d-inline-flex p-2 bd-highlight"
+    <div className = "header">
+    <input type="checkbox" id="btn-nav" class="checkbox"></input>
+    <header>
+      <div class="header-container">
+        <img className='logo header-logo' src={logo} alt='logo'></img>
+        <label for="btn-nav" class="btn-label">
+          <div class="header-button"></div>
+        </label>
+      </div>
+    </header>
+    
+    <nav class="menu">
+      <ul
           id="navbarSupportedContent"
         >
-          <a href="#" class="badge color">Inicio</a>
-          <a href="#" class="badge color">Informacion</a>
-          <a href="#" class="badge color">Galeria</a>
-          <a href="#" class="badge color">Contactos</a>
-        </div>
-      </nav>
-      </header>
+          <li><a href="#" class="badge color color1">Inicio</a></li>
+          <li><a href="#" class="badge color color1">Informacion</a></li>
+          <li><a href="#" class="badge color color1">Galeria</a></li>
+          <li><a href="#" class="badge color color1">Contactos</a></li>
+      </ul>    
+    </nav>
+  </div>
   );
 }
 

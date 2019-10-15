@@ -4,7 +4,9 @@ import { Carousel } from "react-bootstrap";
 
 const Slider = () => {
   return (
-    <div>
+    <div className = 'carousel--container'>
+      <h1> Galeria de imagenes </h1>
+
       <Carousel>
         <Carousel.Item>
           <img

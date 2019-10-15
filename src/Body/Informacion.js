@@ -5,7 +5,7 @@ function Cards() {
   return (
     <div className="card--content">
         <div className="text--cards">
-          <p class="text-center p">Disfruta de la experincia</p>
+          <p class="text-center p">Disfruta de la experiencia</p>
           <p class="text-center">
             Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus
             sit amet fermentum. Donec sed odio operae, eu vulputate felis
@@ -23,7 +23,7 @@ function Cards() {
             ></img>
           </div>
           <div class="card-body">
-            <h5 class="card-title">naturaleza</h5>
+            <h5 class="card-title">Naturaleza</h5>
             <p class="card-text">
               Lorem Ipsum es simplemente el texto de relleno de las imprentas y
               archivos de texto. Lorem Ipsum ha sido el texto de relleno

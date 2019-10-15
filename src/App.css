@@ -6,14 +6,6 @@ html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
-body {
-  background: #030303;
-}
-
-.imagen {
-  width: 100%;
-  height: 400px;
-}
 
 .card1 {
   display: flex;
@@ -39,8 +31,8 @@ body {
 }
 
 .parallax {
-  background-image: url(./header/back.jpg);
-  min-height: 300px;
+  background-image: url(./header/imagen.jpg);
+  min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,10 +40,10 @@ body {
 }
 
 .text {
-  padding-top: 50%;
+  padding-top: 30%;
   padding-bottom: 40%;
   text-align: center;
-  color: black;
+  color: white;
   font-size: 70%;
 }
 
@@ -65,32 +57,10 @@ body {
   font-size: 3em;
 }
 
-.header .navbar {
-  display: flex;
-  color: white;
-  justify-content: center;
-  background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
-  width: 100%;
-  height: auto;
-  position: fixed;
-  z-index: 2;
-}
-
-.color, .header{
-  color: white;
-}
-
 .color:hover{
   transform: scale(1.05);
   color: white;
   text-decoration: none;
-}
-
-.logo {
-  margin-left: 4em;
-  display: flex;
-  max-width: 3em;
-  max-height: 3em;
 }
 
 .card--content {
@@ -129,19 +99,31 @@ body {
   }
 
   .text {
+    padding-top: 15%;
+    padding-bottom: 20%;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+  }
+
+  h1{
     text-align: center;
     color: black;
-    font-size: 1.5em;
+    font-size: 120%;
+  }
+  
+  .carousel--container{
+    margin: 5% 0;
   }
 
   .text--cards {
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 1.5em;
+    font-size: 90%;
   }
 
   .parallax {
-    background-image: url(./header/back.jpg);
+    background-image: url(./header/imagen.jpg);
     min-height: 650px;
     background-attachment: fixed;
     background-position: center;
@@ -149,23 +131,15 @@ body {
     background-size: cover;
   }
 
-  .header .navbar {
-    display: flex;
+  .color, .header{
     color: white;
-    flex-direction: inherit;
-    justify-content: space-around;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: 2;
   }
 
   .logo {
-    max-width: 3em;
-    max-height: 3em;
+    max-width: 5em;
+    max-height: 5em;
   }
-  
+
   .color:hover{
     transform: scale(1.05);
     color: white;

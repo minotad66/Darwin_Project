@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Carousel } from "react-bootstrap";
 import "../App.css";
 
 class Imagenes extends Component {
@@ -15,26 +16,27 @@ class Imagenes extends Component {
 
   render() {
     return (
-      <div className="card1">
-        {this.state.items.map(item => {
-          return (
-            <div className="card">
-              <div className="img--efect">
+      <div  className = 'carousel--container'>
+        <h1> Galeria de imagenes </h1>
+        <Carousel>
+          {this.state.items.map(item => {
+            return (
+              <Carousel.Item>
                 <a className=".img--efect" href={item.url} target="_blank">
                   <img
-                    className="card--img"
+                    className="img--efect"
+                    className="d-block w-100"
                     src={item.download_url}
-                    class="card-img-top"
-                    alt="..."
-                  ></img>
+                    alt="First slide"
+                  />
                 </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">{item.author}</h5>
-              </div>
-            </div>
-          );
-        })}
+                <Carousel.Caption>
+                  <h3>Autor: {item.author}</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
       </div>
     );
   }
